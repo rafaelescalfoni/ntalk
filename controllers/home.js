@@ -6,7 +6,7 @@ module.exports = function(app) {
 	
 	    login: function(req, res) {
 	    	var email = req.body.usuario.email
-	    		, nome = req.body.usuario.nome;
+				, nome = req.body.usuario.nome;
 	      
 			if(email && nome) {
 				var usuario = req.body.usuario;
@@ -22,6 +22,6 @@ module.exports = function(app) {
 			res.redirect('/');
 		}
 	};
+
 	return HomeController;
- 
 };
